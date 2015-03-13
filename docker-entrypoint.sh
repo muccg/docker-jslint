@@ -13,7 +13,7 @@ failed=""
 
 echo "** gjslint **"
 for JS in $JSFILES; do
-    if ! gjslint --disable 0131 --nojsdoc --max_line_length 160 $JS; then
+    if ! gjslint --disable "0131,0110" --nojsdoc --max_line_length 160 $JS; then
         failed="`basename $JS` $failed"
     fi
 done
