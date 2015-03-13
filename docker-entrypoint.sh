@@ -19,7 +19,7 @@ done
 echo "** closure compiler **"
 tmpjs="/tmp/output.js"
 for JS in $JSFILES; do
-    if ! java -jar /usr/local/closure/compiler.jar --js "$JS" --js_output_file "$tmpjs" --warning_level DEFAULT --summary_detail_level 3; then
+    if ! java -jar /usr/local/closure/compiler.jar --js "$JS" --js_output_file "$tmpjs" --warning_level DEFAULT --summary_detail_level 3 --language_in ECMASCRIPT5; then
         failed="`basename $JS` $failed"
     fi
 done
