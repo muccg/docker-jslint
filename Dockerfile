@@ -1,6 +1,6 @@
 #
 FROM muccg/python-base:debian8-2.7
-MAINTAINER ccg <ccgdevops@googlegroups.com>
+MAINTAINER ccg <devops@ccg.murdoch.edu.au>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   openjdk-7-jre-headless wget unzip && \
