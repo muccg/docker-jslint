@@ -7,8 +7,6 @@ for i in $*; do
     done
 done
 
-echo "Linting: $JSFILES"
-
 failed=""
 
 echo "** gjslint **"
