@@ -2,9 +2,7 @@
 
 # find every JS file in every dir passed as an argument to container
 for i in $*; do
-    for i in $i/*.js; do
-        JSFILES="$JSFILES $i"
-    done
+    JSFILES="$JSFILES "$(find "$i" -name "*.js")
 done
 
 failed=""

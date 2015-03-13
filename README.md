@@ -1,7 +1,7 @@
 docker-jslint
 =============
 
-Docker container which lints javascript files in the directories
+Docker container which lints javascript files under the directories
 passed to it as argument(s).
 
 Applies the Google Closure Compiler, as well as gjslint, to all
